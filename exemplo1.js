@@ -34,9 +34,9 @@ console.log(calculadora(soma, 2,3));
 
 const vetor = [1,2,3,4,5];
 
-const dobrado = vetor.map(function(item){
-    return item*2;
-})
+const dobrado = item =>{
+    return item * 2
+}
 
 const objetoDoVetor = vetor.map(function(item){
     return {original: item, dobrado: item*2};
@@ -52,9 +52,7 @@ const pares = vetor.filter(function(item){
 
 const paresDobrados = vetor.filter(function(item){
     return item % 2 === 0
-}).map(function(item){
-    return item * 2
-})
+}).map(dobrado)
 
 console.log("Pares: ", pares);
 
