@@ -23,6 +23,11 @@ const str = "Ednilton Maritns - DevPleno";
 const soma = function(a, b){
     return a + b
 }
-
-
 console.log(soma(1,2));
+
+const calculadora = function(op, a, b){
+    return op(a,b);
+}
+
+//passando uma função para outra função e recebendo parâmetros da outra
+console.log(calculadora(soma, 2,3));
