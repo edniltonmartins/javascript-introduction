@@ -38,4 +38,10 @@ const dobrado = vetor.map(function(item){
     return item*2;
 })
 
+const objetoDoVetor = vetor.map(function(item){
+    return {original: item, dobrado: item*2};
+} )
+
 console.log(vetor, dobrado);
+
+console.log("vamos ver a transformação", objetoDoVetor)
