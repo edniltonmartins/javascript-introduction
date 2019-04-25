@@ -45,3 +45,9 @@ const objetoDoVetor = vetor.map(function(item){
 console.log(vetor, dobrado);
 
 console.log("vamos ver a transformação", objetoDoVetor)
+
+const pares = vetor.filter(function(item){
+    return item % 2 === 0
+})
+
+console.log("Pares: ", pares);
