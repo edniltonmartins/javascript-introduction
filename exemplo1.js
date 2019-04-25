@@ -31,3 +31,11 @@ const calculadora = function(op, a, b){
 
 //passando uma função para outra função e recebendo parâmetros da outra
 console.log(calculadora(soma, 2,3));
+
+const vetor = [1,2,3,4,5];
+
+const dobrado = vetor.map(function(item){
+    return item*2;
+})
+
+console.log(vetor, dobrado);
