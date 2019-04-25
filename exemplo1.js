@@ -50,4 +50,12 @@ const pares = vetor.filter(function(item){
     return item % 2 === 0
 })
 
+const paresDobrados = vetor.filter(function(item){
+    return item % 2 === 0
+}).map(function(item){
+    return item * 2
+})
+
 console.log("Pares: ", pares);
+
+console.log("Pares dobrados: ", paresDobrados);
