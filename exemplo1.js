@@ -9,7 +9,6 @@ if (valor===10){
 }
 
 let valor2 = 10;
-
 valor2+=10
 
 console.log( `imprimindo a constante valor: ${valor}`);
@@ -33,27 +32,17 @@ const calculadora = function(op, a, b){
 console.log(calculadora(soma, 2,3));
 
 const vetor = [1,2,3,4,5];
+const dobrar = item => item * 2;
 
-const dobrado = item =>{
-    return item * 2
-}
-
-const objetoDoVetor = vetor.map(function(item){
+const objetoDoVetor = vetor.map(item=>{
     return {original: item, dobrado: item*2};
-} )
-
-console.log(vetor, dobrado);
-
-console.log("vamos ver a transformação", objetoDoVetor)
-
-const pares = vetor.filter(function(item){
-    return item % 2 === 0
 })
 
-const paresDobrados = vetor.filter(function(item){
-    return item % 2 === 0
-}).map(dobrado)
+console.log(vetor, dobrar);
+console.log("vamos ver a transformação", objetoDoVetor);
 
-console.log("Pares: ", pares);
+const pares = item=> item % 2 === 0;
+const paresDobrados = vetor.filter(pares).map(dobrar);
 
+console.log("Pares: ", vetor.filter(pares));
 console.log("Pares dobrados: ", paresDobrados);
